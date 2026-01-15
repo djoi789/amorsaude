@@ -1,0 +1,311 @@
+/* ======================================================
+   RESET GLOBAL
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #1f2933;
+}
+
+/* ======================================================
+   =================== PÁGINA LOGIN =====================
+====================================================== */
+
+.page-login {
+    height: 100vh;
+}
+
+/* Container geral */
+.page-login .login-wrapper {
+    height: 100%;
+    display: flex;
+}
+
+/* Lado esquerdo */
+.page-login .login-container {
+    width: 45%;
+    background: #ffffff;
+    padding: 48px 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo topo */
+.page-login .login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.page-login .login-logo img {
+    max-width: 260px;
+    height: auto;
+}
+
+/* Conteúdo central */
+.page-login .login-content {
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+}
+
+.page-login .login-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.page-login .login-content p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 28px;
+}
+
+/* Formulário */
+.page-login .form-group {
+    margin-bottom: 18px;
+}
+
+.page-login .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.page-login .form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    transition: .2s;
+}
+
+.page-login .form-group input:focus {
+    outline: none;
+    border-color: #003a8f;
+    box-shadow: 0 0 0 3px rgba(0,58,143,0.15);
+}
+
+/* Esqueceu senha */
+.page-login .forgot {
+    text-align: right;
+    margin: 6px 0 22px;
+}
+
+.page-login .forgot a {
+    font-size: 13px;
+    color: #003a8f;
+    text-decoration: none;
+}
+
+.page-login .forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Botão */
+.page-login .btn-login {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: #c4161c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.page-login .btn-login:hover {
+    background: #a51217;
+}
+
+/* Rodapé */
+.page-login .footer {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: auto;
+}
+
+/* Lado direito (banner) */
+.page-login .banner {
+    width: 55%;
+    background: linear-gradient(155deg, #003a8f, #005fcc);
+    color: #ffffff;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-login .banner-content {
+    max-width: 440px;
+}
+
+.page-login .ribbon {
+    display: inline-block;
+    background: #c4161c;
+    padding: 10px 26px;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.page-login .banner-content p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ======================================================
+   =================== PÓS-LOGIN ========================
+====================================================== */
+
+.page-panel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.page-panel .topbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-panel .topbar .logo {
+    height: 42px;
+}
+
+.page-panel .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.page-panel .user-info {
+    text-align: right;
+}
+
+.page-panel .user-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-panel .date-time {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Logout */
+.page-panel .logout-btn {
+    background: #c4161c;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.page-panel .logout-btn:hover {
+    background: #a51217;
+}
+
+/* Layout */
+.page-panel .layout {
+    flex: 1;
+    display: flex;
+}
+
+/* Sidebar esquerda */
+.page-panel .sidebar {
+    width: 180px;
+    background: #003a8f;
+    color: #ffffff;
+    padding: 24px 16px;
+}
+
+.page-panel .sidebar ul {
+    list-style: none;
+}
+
+.page-panel .sidebar li {
+    margin-bottom: 12px;
+}
+
+.page-panel .sidebar a {
+    display: block;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #e5ecf5;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.page-panel .sidebar a:hover {
+    background: rgba(255,255,255,0.12);
+    color: #ffffff;
+}
+
+/* Conteúdo */
+.page-panel .content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.page-panel .content h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.page-panel .content p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+.page-panel .content-box {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+/* ======================================================
+   RESPONSIVO
+====================================================== */
+@media (max-width: 992px) {
+
+    .page-login .login-wrapper {
+        flex-direction: column;
+    }
+
+    .page-login .login-container,
+    .page-login .banner {
+        width: 100%;
+    }
+
+    .page-panel .layout {
+        flex-direction: column;
+    }
+
+    .page-panel .sidebar {
+        width: 100%;
+    }
+}
